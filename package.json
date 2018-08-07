@@ -1,0 +1,25 @@
+{
+  "name": "jobmap",
+  "version": "1.0.0",
+  "description": "jobmap proto",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass starter/sass/main.scss starter/css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nath-thoms/travel-proto.git"
+  },
+  "author": "Nathan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nath-thoms/travel-proto/issues"
+  },
+  "homepage": "https://github.com/nath-thoms/travel-proto#readme",
+  "devDependencies": {
+    "node-sass": "^4.9.2"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}
