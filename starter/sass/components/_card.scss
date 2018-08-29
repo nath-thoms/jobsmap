@@ -27,6 +27,14 @@
             &-1 {
                 background-image: linear-gradient(to right bottom, $color-primary, $color-primary-light)
             }
+
+            &-2 {
+                background-image: linear-gradient(to right bottom, $color-premium-light, $color-premium-dark)
+            }
+
+            &-3 {
+                background-image: linear-gradient(to right bottom, $color-corporate-light, $color-corporate-dark)
+            }
         }
 
     }
@@ -46,17 +54,23 @@
         background-blend-mode: unset;
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        
 
         &--1 {
             background-image:linear-gradient(to right bottom, $color-primary, $color-primary-light), url(../img/clement-5.jpg);
+            background-blend-mode: hard-light !important;
         }
 
         &--2 {
-            background-image: url(../img/clement-5.jpg);
+            background-image:linear-gradient(to right bottom, $color-premium-light, $color-premium-dark), url(../img/clement-5.jpg);
+            background-blend-mode: hard-light;
         }
 
         &--3 {
-            background-image: url(../img/clement-5.jpg);
+            background-image:linear-gradient(to right bottom, $color-corporate-light, $color-corporate-dark), url(../img/clement-5.jpg);
+            background-blend-mode: hard-light !important;
         }
     }
 
@@ -83,6 +97,16 @@
         &--1 {
             background-image: linear-gradient(to right bottom,
              $color-primary, $color-primary-light);
+        }
+
+        &--2 {
+            background-image: linear-gradient(to right bottom,
+            $color-premium-light, $color-premium-dark);
+        }
+
+        &--3 {
+            background-image: linear-gradient(to right bottom,
+            $color-corporate-light, $color-corporate-dark);
         }
     }
 
@@ -112,6 +136,8 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        width: 90%;
+        text-align:center;
     }
 
     &__price-box {
